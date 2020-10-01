@@ -1,4 +1,4 @@
-def censor_string(txt_str, word_list, char):
+def censor_string(txt_str: str, word_list: list, char: str) -> str:
     for word in txt_str.split():
         if word in word_list:
             txt_str = txt_str.replace(word, char * len(word))
